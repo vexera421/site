@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>게시판</title>
+</head>
+<body>
+    <!--공통 상단 메뉴-->
+  <header>
+    <div class="logo">
+        <a href="index.html">YEONGJIN PHARMA</a>
+    </div>
+    <nav>
+        <a href="index.html">홈</a>
+        <a href="#">회사소개</a>
+        <a href="#">제품소개</a>
+        <a href="board.html">게시판</a>
+        
+    </nav>
+  </header>
+ <!-- 게시판 목록-->
+  <main>
+    <!-- 게시판 검색 입력-->
+    <section class="page-title">
+        <h1>게시판</h1>
+        <p>YEONGJIN PHARMA의 새로운 소식을 확인하세요.</p>
+
+    </section>
+    
+    <section class="content-section">
+            <div class="board-search">
+                <input type="text" id="searchText" placeholder="검색할 제목을 입력하세요">
+                <button class="button" onclick="">검색</button>
+            </div>
+        
+
+            <!-- 게시판 목록 출력 -->
+            <table class="board-table">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                    </tr>
+                </thead>
+                <tbody id="boardList">
+                    <tr>
+                        <td>3</td>
+                        <td class="subject"><a href="view.html">의약품 복용 안내</a></td>
+                        <td>관리자</td>
+                        <td>2025.10.23</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="subject"><a href="index.html">제약 홈페이지 오픈</a></td>
+                        <td>관리자</td>
+                        <td>2025.10.20</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="subject"><a href="#">연구개발 소식</a></td>
+                        <td>홍길동</td>
+                        <td>2025.10.15</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="board-bottom">
+                <div class="page-number">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
+                <a href="write.html" class="button">글쓰기</a>
+            </div>
+        </section>
+  </main>
+
+  <!-- 공통 하단 footer -->
+  <footer>
+    <p>YEONGJIN PHARMA</p>
+    <p>주소 : 서울특별시 건강로 123 | 대표전화 : 010-1234-4321</p>
+    <small>Copyright 2025 YEONGJIN PHARMA. ALL right reserved.</small>
+  </footer>
+</body>
+</html>

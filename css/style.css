@@ -1,0 +1,351 @@
+/* 전체 페이지에서 공통으로 사용하는 기본 스타일 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "맑은 고딕", sans-serif;
+    color: #263b4d;
+    background-color: white;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 헤더 - 상단 로고와 메뉴 */
+header {
+    display: flex; /* 가로 정렬 */
+    justify-content: space-between; /* 양 옆으로 정렬 */
+    padding: 20px 8%; /* 좌 우 패딩값은 % 입력 */
+    border-bottom: 1px solid #dce8ef;
+    align-items: center; /* 세로 정렬 가운데 */
+}
+
+.logo {
+    font-weight: bold;
+    color: #0866a8;
+    font-size: 22px;
+}
+
+nav a {
+    margin-left: 22px;
+    color: #29465d;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #157965;
+}
+
+/* 홈페이지 대문페이지 메인 배너 */
+.main-banner {
+    background-color: #eaf6fb;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.main-banner h1 {
+    color: #075b91;
+    font-size: 35px;
+    margin: 0 0 12px;
+}
+
+.main-banner p {
+    color: #526f82;
+    margin-bottom: 30px;
+}
+
+/* 공통 버튼 디자인 */
+.button {
+    background-color: #159765;
+    padding: 10px 18px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #107b52;
+}
+
+/* 본문 컨텐츠 영역 */
+.content-section {
+    width: 1000px;
+    margin: 0 auto; /* 가운데 정렬 */
+    padding: 35px 20px;
+}
+
+.content-section h2 {
+    color: #075b91;
+    margin-top: 0;
+}
+
+.content-section p {
+    color: #5d7180;
+}
+
+/* 홈페이지 대문 제품 카드리스트 */
+.card-list {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex:1; /* 남는 공간을 균일하게 배분 */
+    border: 1px solid #dce8ef;
+    border-radius: 8px;
+    background-color: #fbfdfe;
+    padding: 18px;
+}
+
+.card h3 {
+    color: #075b91;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #647987;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.product-image {
+    display: flex;
+    height: 90px;
+    /* border: 1px solid red; */
+    font-weight: bold;
+    font-size: 40px;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.product-image.blue {
+    background-color: #dceffc;
+    color: #0876b8;
+}
+
+.product-image.green {
+    background-color: #ddf4e8;
+    color: #159765;
+}
+
+.product-image.lightblue {
+    background-color: #e4f5f7;
+    color: #168b9c;
+}
+
+/* 공지사항 리스트 */
+.content-section.notice ul {
+    list-style: none;
+    border-top: 1px solid #dce8ef;
+    padding: 0;
+}
+
+.content-section.notice li {
+    border-bottom: 1px solid #dce8ef;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px 5px;
+}
+
+.content-section.notice li span {
+    font-size: 13px;
+    color: #718493;
+}
+
+.content-section.notice a:hover {
+    color: #159765;
+}
+
+/* footer 디자인 */
+footer {
+    background-color: #10466d;
+    text-align: center;
+    padding: 25px 15px;
+    color: white;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+footer small {
+    color: #c9dce8;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* board.html - 게시판 목록 디자인 */
+
+/* 게시판 페이지 제목 */
+.page-title {
+    background-color: #eaf6fb;
+    padding: 30px 8%; /* 위 아래 패딩값은 30px, 양 옆은 전체 길이의 8% */
+
+}
+
+.page-title h1 {
+    color: #075b91;
+    margin: 0;
+}
+
+.page-title p {
+    margin: 0;
+    color: #526f82;
+}
+
+/* 게시판 검색 */
+.board-search {
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.board-search input {
+    width: 260px;
+    padding: 10px;
+    border: 1px solid #cbdbe5;
+    border-radius: 5px;
+}
+
+/* 게시판 글 목록 테이블 */
+.board-table {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    border-collapse: collapse; /* 열과 열사이의 빈 공간을 삭제 */
+
+}
+
+.board-table th {
+    background-color: #f0f7fa;
+    padding: 13px 8px;
+    color: #29465d;
+}
+
+.board-table td {
+    padding: 13px 8px;
+    border-bottom: 1px solid #dce8ef;
+}
+
+.board-table .subject {
+    text-align: left;
+    width: 50%;
+}
+
+.board-table .subject a:hover{
+    color: #159765;
+    text-decoration: underline;
+}
+
+.board-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.page-number a {
+    border: 1px solid #dce8ef;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* 게시글 내용 보기 디자인 */
+.article-section h2 {
+    border-bottom: 1px solid #dce8ef;
+    padding: 15px;
+}
+.article-info {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    color: #718493;
+    font-size: 13px;
+    border-bottom: 1px solid #dce8ef;
+
+}
+.article-content {
+    padding: 20px;
+    min-height: 250px;
+
+}
+.article-content h3 {
+    color: #075b91;
+
+}
+
+.article-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+
+}
+/* 회색 버튼 ( 수정, 삭제 버튼 ) */
+.button-gray {
+    background-color: #718493;
+
+}
+.button-gray:hover {
+    background-color: #536775;
+}
+
+.prev-next {
+    padding-top: 0;
+}
+.prev-next p {
+    border: 1px solid #dce8ef;
+    padding: 10px;
+
+}
+
+.prev-next b {
+    color: #075b91;
+}
+
+/*게시판 글쓰기 폼 디자인 */
+.form-section form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbdbe5;
+    border-radius: 5px;
+    font-family: inherit; /* input 폼 안에 입력되는 글꼴이 상위 태그에서 지정한 글꼴로 상속 */
+
+
+}
+
+.form-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbdbe5;
+    border-radius: 5px;
+    font-family: inherit; /* input 폼 안에 입력되는 글꼴이 상위 태그에서 지정한 글꼴로 상속 */
+    resize: vertical;/* 세로로만 영역늘리기 허용 */
+
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    
+
+}
